@@ -44,8 +44,8 @@ const Bloque1 = ({ c5, c6, c7, c8 }) => {
         {/* Section Title */}
         <div className="container section-title">
           <div className="section-title-container d-flex align-items-center justify-content-between">
-            <h2>Culture</h2>
-            <p><a href="categories.html">See All Culture</a></p>
+            <h2>Popular</h2>
+            <p><a href="categories.html">Descubre mas</a></p>
           </div>
         </div>{/* End Section Title */}
         <div className="container">
@@ -92,7 +92,7 @@ const Bloque1 = ({ c5, c6, c7, c8 }) => {
                     <h2><a href="blog-details.html">{item.titulo}</a></h2>
 
                     <div className="d-flex align-items-center author">
-                      <div className="photo"><img src="https://yt3.googleusercontent.com/ytc/AIdro_lK7aFEwmPUPERCCXEyYbJ9F7X5ssIhXXGFHKtR9Ewa8g=s72-c-k-c0x00ffffff-no-rj" /></div>
+                      <div className="photo"><img src={`https://yt3.googleusercontent.com/ytc/${item.icono}=s72-c-k-c0x00ffffff-no-rj`} /></div>
                       <div className="name">
                         <h3 className="m-0 p-0">{item.fecha}</h3>
                       </div>
@@ -118,7 +118,7 @@ const Bloque1 = ({ c5, c6, c7, c8 }) => {
                     <h2><a href="blog-details.html">{item.titulo}</a></h2>
 
                     <div className="d-flex align-items-center author">
-                      <div className="photo"><img src="https://yt3.googleusercontent.com/ytc/AIdro_n-lRPOdblZJINRJ79DOP30Xocq7wUEK5AbgKvdUA1g6a8=s72-c-k-c0x00ffffff-no-rj" /></div>
+                      <div className="photo"><img src={`https://yt3.googleusercontent.com/${item.icono}=s72-c-k-c0x00ffffff-no-rj`} /></div>
                       <div className="name">
                         <h3 className="m-0 p-0">{item.fecha}</h3>
                       </div>
@@ -144,7 +144,7 @@ const Bloque1 = ({ c5, c6, c7, c8 }) => {
                     <h2><a href="blog-details.html">{item.titulo}</a></h2>
 
                     <div className="d-flex align-items-center author">
-                      <div className="photo"><img src={`https://yt3.googleusercontent.com/yp807d3F1ceiKWv3vGyuHZhEKqHk0QPboGiyFwHgydvdN6NoecSYEaAsZtlYXB9YW8fm2eSL=s72-c-k-c0x00ffffff-no-rj`} alt className="img-fluid" /></div>
+                      <div className="photo"><img src={`https://yt3.googleusercontent.com/${item.icono}=s72-c-k-c0x00ffffff-no-rj`} alt className="img-fluid" /></div>
                       <div className="name">
                         <h3 className="m-0 p-0">{item.fecha}</h3>
                       </div>

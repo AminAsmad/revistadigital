@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import MenuCanal from './MenuCanal'
 
 const Header = () => {
   return (
@@ -10,24 +12,28 @@ const Header = () => {
       <h1 className="sitename">Revista Digital</h1>
     </a>
     <nav id="navmenu" className="navmenu">
-      <ul>
-        <li><a href="index.html" className="active">Inicio</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="single-post.html">Single Post</a></li>
-        <li className="dropdown"><a href="#"><span>Canales</span> <i className="bi bi-chevron-down toggle-dropdown" /></a>
-          <ul>
+    <ul>
+            <li><Link to="/inicio" href="#" className="active">Inicio</Link></li>
+
             <li className="dropdown"><a href="#"><span>Canales</span> <i className="bi bi-chevron-down toggle-dropdown" /></a>
               <ul>
-                <li><a href="#">Deep Dropdown 1</a></li>
-                <li><a href="#">Deep Dropdown 2</a></li>
-                <li><a href="#">Deep Dropdown 3</a></li>
-                <li><a href="#">Deep Dropdown 4</a></li>
+
+
+                <MenuCanal/>
+               
+                
+                
               </ul>
             </li>
-          </ul>
-        </li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+
+
+
+            
+            <li><Link to="/agregaruncanal" href="#">Agrega un Canal</Link></li>
+            <li><Link to="/agregarunvideo" href="#">Agrega un Video</Link></li>
+            
+           
+        </ul>
       <i className="mobile-nav-toggle d-xl-none bi bi-list" />
     </nav>
     <div className="header-social-links">

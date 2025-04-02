@@ -60,7 +60,7 @@ const closeDialog = () => {
               <h2><a href="blog-details.html">{item.titulo}</a></h2>
               
               <div className="d-flex align-items-center author">
-                <div className="photo"><img src="assets/img/person-1.jpg" alt className="img-fluid" /></div>
+                <div className="photo"><img src={`https://yt3.googleusercontent.com/${item.icono}=s72-c-k-c0x00ffffff-no-rj`} /></div>
                 <div className="name">
                   <h3 className="m-0 p-0">{item.fecha}</h3>
                 </div>

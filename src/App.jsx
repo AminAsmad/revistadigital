@@ -3,7 +3,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Inicio from './pages/Inicio'
-import DetalleCanales from './pages/DetalleCanales'
+
+import AgregarCanal from './pages/AgregarCanal'
+import DetalleCanal from './pages/DetalleCanal'
+import AgregarVideo from './pages/AgregarVideo'
 
 const App = () => {
   return (
@@ -12,7 +15,9 @@ const App = () => {
     <Routes>
     <Route path='/'element={<Inicio/>}/>
     <Route path='inicio'element={<Inicio/>}/>
-    <Route path='detallecanales'element={<DetalleCanales/>}/>
+    <Route path="/canales/:id/:nombre" element={<DetalleCanal/>}/>
+    <Route path='agregaruncanal'element={<AgregarCanal/>}/>
+    <Route path="/agregarunvideo" element={<AgregarVideo/>}/>
     <Route path='*'element={<Inicio/>}/>
     </Routes>
       <Footer/>
